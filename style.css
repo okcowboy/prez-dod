@@ -38,6 +38,15 @@ ul{
     border-left: 6px solid #fe6f66;
     list-style-type:none;
 }
+
+#qualite-t-dev ul {
+    font-size: 27px;
+}
+
+.hint {
+    font-size: 36px;
+    font-style: italic;
+}
 a:hover {
     color: #f1531d
 }
