@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Définissons le Done</title>
+  <meta name="author" content="Scott Cheng">
+  <meta name="description" content="A non-technical intro to CSS level 3">
+  <link href="http://fonts.googleapis.com/css?family=Telex" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="lib/chartist.min.css" rel="stylesheet">
+
+  <link rel="canonical" href="http://scottcheng.github.com/revolutionary-css3/">
+  <script src="lib/jquery-1.11.3.min.js"></script>
+  <script src="lib/chartist.min.js"></script>
+</head>
+
+<body class="impress-not-supported">
+  <div id="fallback-message">You must be either using a mobile browser or an ancient one!
+    <br /> If the latter, I sincerely suggest you come back in <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>.</div>
+  <div id="hint">
+    <p>ssssUse spacebar, arrow keys or page up / down to navigate</p>
+  </div>
+  <div class="btmbar">
+    <img src="http://www.softeam.fr/sites/all/themes/softeam/logo.png" alt="Accueil">
+  </div>
+
+  <div id="impress">
+    <div id="title" data-z='500' data-rotate='60' data-rotate-x='-15' data-rotate-y='15' data-scale='1' class="step impress-on-title">
+      <div class="info"><a href="http://www.softeam.fr/" target="_blank">SOFTEAM Cadestan</a></div>
+      <h1><span class="article">Définissons le</span><br />
+<span class="adj">done!</span><br />
+<span class="noun">DOD</span></h1>
+      <div class="subtitle">Agile tour 2015 / Sophia antipolis</div>
+    </div>
+
+
+    <div id="historique" data-x='-600' data-y='0' data-rotate='90' data-scale='0.25' class="step" >
+      <h2>Historique</h2>
+    </div>
+
+    <div id="but" data-x='-810' data-y='0' data-rotate='90' data-scale='55' class="step">
+      <h2>But</h2>
+      <ul >
+        <li>Obtenir un consensus autour du travail « terminé » </li>
+        <li>Fixer une liste de règles auditable visant la qualité </li>
+        <li>Minimiser les délais du risque </li>
+        <li>Améliorer la qualité des éléments produits par l’équipe</li>
+        <li>Rendre visible la qualité aux acteurs du projet</li>
+      </ul>
+    </div>
+    <div id="comment" data-x='0' data-y='0' data-scale='6' class="step">
+      <div class="comment">Mais comment?</div>
+    </div>
+    <div id="ualite-f" data-x='-2800' data-y='1200' data-scale='0.5' class="step property">
+      <h2>Qualité Fonctionnelle</h2>
+      <h3>A-t-on construit la bonne solution? </h3>
+       <ul>
+        <li>Bonne définition des acceptances criterias</li>
+        <li>Des AC testés par les développeurs</li>
+        <li>Test d’intégration fonctionnel automatisé</li>
+        <li>Validation de la user story/AC par le PO</li>
+        <li>Testé par le métier</li>
+      </ul>
+    </div>
+    <div id="qualite-t-dev" data-x='-1988' data-y='1200' data-scale='0.5' class="step property">
+      <h2>Qualité Technique</h2>
+      <h3>A-t-on bien construit? </h3>
+      <ul>
+        
+         <li>
+           <ul>Le développement
+              <li> terminé</li>
+              <li>Build est au vert sur la Plateforme d’intégration continue</li>
+           </ul>
+         <li>
+           <ul>Revue de code
+              <li>Robustesse/vulnérabilité</li>
+              <li>Commentaires</li>
+              <li>Cohérence des Tests unitaires</li>        
+           </ul>
+         </li>
+         <li><h2>Documentation</h2>
+            <ul>
+              <li>Diagrammes</li>
+              <li>API</li>
+              <li>MAJ liste de framework </li>   
+              <li>MAJ architecture</li>
+              <li>MAJ de l’user story</li>
+           </ul>
+         </li>
+         <li>Ticketing / Time tracking
+            <ul>
+              <li>Passage à DONE</li>
+              <li>Mise à jour de la charge</li>
+              <li>Changement d'état / Workflow</li>
+
+           </ul>
+         </li>
+      </ul>
+    </div>
+    <div id="qualite-t-tests" data-x='-1176' data-y='1200' data-scale='0.5' class="step property">
+      <h2>Qualité Technique</h2>
+      <ul>
+         <li>
+           <ul>Les tests 
+            <li>Tests unitaires réalisés</li>
+            <li>Tests unitaires existants sans erreurs</li>
+            <li>Tests de performance </li>
+            <li>Tests d'accessibilité</li>
+            <li>Tests d’environnements (ie)</li>
+            <li>Mesure de la couverture de code</li>
+            <li>Mesure de la complexité cyclomatique</li>
+           </ul>
+         </li>
+      </ul>
+    </div>
+    <div id="prepare" data-x='-770' data-y='1500' data-z='100' data-rotate-x='-75' data-scale='0.25' class="step">
+      <h2>Préparer son DOD</h2>
+      <ul>
+         <li>
+           <ul>Quand ?
+            <li>Avant le début du premier Sprint</li>
+            <li>Avant la création des stories</li>
+           </ul>
+         </li>
+         <li>
+           <ul>Qui ?
+            <li>Toute l'équipe!</li>
+           </ul>
+         </li>
+         <li>
+           <ul>Pourquoi ?
+            <li>Transparence</li>
+            <li>Uniformisation des bonnes pratiques</li>
+            <li>Bonnes idées!</li>
+            <li>On n’impose pas le DOD!</li>
+           </ul>
+         </li>
+      </ul>
+    </div>
+    <div id="Evoluer" data-x='-364' data-y='1200' data-scale='0.5' class="step">
+      <h2>Faire évoluer son DOD</h2>
+        <ul>Métodologie
+         <li>Itérative</li>
+         <li>Incrcémentale</li>
+      </ul>
+      <h2>Agileception</h2>
+      <span>On applique la méthode aux artéfacts de la méthode! </span>
+    </div>
+    <div id="kanban" data-x='42' data-y='1500' data-z='100' data-rotate-x='-75' data-scale='0.25' class="step">
+      <h2>Comment le présenter ?</h2>
+      <h3>Physiquement</h3>
+       <ul>
+         <li>Comme une todo list</li>
+         <li>Sur le tableau (identification plus facile des points de blocage)</li>
+      </ul>
+      <img src="ress/tableau.png">
+    </div>
+    <div id="jira" data-x='448' data-y='1200' data-scale='0.5' class="step">
+      <h2>Comment le présenter ?</h2>
+      <h3>Virtuellement</h3>
+       <ul>
+         <li>Exemple Jira:</li>
+      </ul>
+      <img src="ress/jira.png">
+    </div>
+    <div id="refacto" data-x='0' data-y='1900' data-scale='6' class="step">
+      <div class="comment">"On va faire un sprint technique"</div>
+     </div> 
+      
+    <div id="planning" data-x='1260' data-y='1200' data-scale='0.5' class="step">
+      <h2>Impacts sur les plannings</h2>
+        <ul>Une mauvaise DOD engendre généralement
+         <li>De la dette documentaire</li>
+         <li>De la dette technique</li>
+      </ul>
+    </div>
+    <div id="dette" data-x='1560' data-y='1200' data-scale='0.5' class="step">
+      <h2>Dette</h2>
+      <div id="snapdette">
+        <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="300mm"
+   height="100mm"
+   viewBox="0 0 744.09449 1052.3622"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="dette.svg">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 1250.2062 : 1"
+       inkscape:vp_y="0 : 2375.9998 : 0"
+       inkscape:vp_z="198.42521 : 1562.7578 : 1"
+       inkscape:persp3d-origin="99.212605 : 1041.8385 : 1"
+       id="perspective4136" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="449.69299"
+     inkscape:cy="69.0868"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1005"
+     inkscape:window-x="-9"
+     inkscape:window-y="1191"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1" >
+    <rect
+       style="fill:#007796;fill-opacity:1"
+       id="s1"
+       width="343.00467"
+       height="200.23029"
+       x="-1109.1993"
+       y="36.172859" 
+       class="sprint"/>
+    <rect
+       style="fill:#007796;fill-opacity:1"
+       id="s2"
+       width="343.00467"
+       height="200.23029"
+       x="-766.19489"
+       y="234.44014" class="sprint"/>
+    <rect
+       style="fill:#007796;fill-opacity:1"
+       id="s3"
+       width="343.00467"
+       height="200.23029"
+       x="-421.84552"
+       y="434.57916" class="sprint"/>
+    <rect
+       style="fill:#007796;fill-opacity:1"
+       id="s4"
+       width="343.00467"
+       height="200.23029"
+       x="-79.023293"
+       y="634.14038" class="sprint"/>
+      <rect
+       style="fill:#ff7f2a;fill-opacity:1"
+       id="d1"
+       width="86.648514"
+       height="200.23029"
+       x="-767.51398"
+       y="34.209824"/>
+    <rect
+       style="fill:#ff7f2a;fill-opacity:1"
+       id="d2"
+       width="172.61691"
+       height="200.23029"
+       x="-422.02405"
+       y="233.68277"
+       d2="" />
+    <rect
+       style="fill:#ff7f2a;fill-opacity:1"
+       id="d3"
+       width="242.61494"
+       height="200.23029"
+       x="-78.337616"
+       y="433.68192" />
+    <rect
+       style="fill:#007796;fill-opacity:1"
+       id="s5"
+       width="343.00467"
+       height="200.23029"
+       x="262.61359"
+       y="833.82098" class="sprint"/>
+    <rect
+       style="fill:#ff7f2a;fill-opacity:1"
+       id="d4"
+       width="339.90958"
+       height="200.23029"
+       x="263.40802"
+       y="632.92065" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40.93214417px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-1199.7616"
+       y="195.08347"
+       id="text4256"
+       sodipodi:linespacing="125%"
+       l1="text4256"
+       transform="scale(0.91654446,1.0910545)"><tspan
+         sodipodi:role="line"
+         id="tspan4258"
+         x="-1199.7616"
+         y="195.08347">Sprint 1</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4260"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+         id="flowRegion4262"><rect
+           id="rect4264"
+           width="7.8571429"
+           height="43.57143"
+           x="57.142857"
+           y="260.93362" /></flowRegion><flowPara
+         id="flowPara4266"></flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40.93214417px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-833.20166"
+       y="377.04129"
+       id="l2"
+       sodipodi:linespacing="125%"
+       transform="scale(0.91654446,1.0910545)"><tspan
+         sodipodi:role="line"
+         id="tspan4258-0"
+         x="-833.20166"
+         y="377.04129">Sprint 2 </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="207.85715"
+       y="352.36221"
+       id="text4286"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4288"
+         x="207.85715"
+         y="352.36221"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40.93214417px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-453.56723"
+       y="569.55737"
+       id="l3"
+       sodipodi:linespacing="125%"
+       transform="scale(0.91654446,1.0910545)"><tspan
+         sodipodi:role="line"
+         id="tspan4258-9"
+         x="-453.56723"
+         y="569.55737">Sprint 3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40.93214417px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="-79.330475"
+       y="749.47888"
+       id="l4"
+       sodipodi:linespacing="125%"
+       transform="scale(0.91654446,1.0910545)"><tspan
+         sodipodi:role="line"
+         id="tspan4258-7"
+         x="-79.330475"
+         y="749.47888">Sprint 4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40.93214417px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="289.50864"
+       y="931.19971"
+       id="l5"
+       sodipodi:linespacing="125%"
+       transform="scale(0.91654446,1.0910545)"><tspan
+         sodipodi:role="line"
+         id="tspan4258-5"
+         x="289.50864"
+         y="931.19971">Sprint 5</tspan></text>
+    <rect
+       style="fill:#ff0000;fill-opacity:1"
+       id="rect4314"
+       width="3517.3286"
+       height="1404.3856"
+       x="-2687.1194"
+       y="-2753.4805" />
+    <rect
+       style="fill:#ff0000;fill-opacity:1"
+       id="rect4316"
+       width="190.92856"
+       height="195.17143"
+       x="444.10901"
+       y="-606.59491" />
+  </g>
+</svg>
+      </div>
+    </div>
+    <div id="releaseplanning" data-x='2072' data-y='1200' data-scale='0.5' class="step">
+   <p>5 itérations - Release burndown</p>
+      <div id="donegraph" class="graph"></div>
+      <script>
+        $( document ).ready(function() {
+            $('#releaseplanning').on('impress:stepenter', function(){
+                var chart = new Chartist.Line('#donegraph', {
+                labels: ['Début','Sprint 1', 'Sprint 2', 'Sprint 3', 'Sprint 4', 'Sprint 5'],
+                series: [
+                  [5, 4.5, 3, 2, 1,0]
+                ]
+              }, {
+                low: 0,
+                showArea: true,
+                showPoint: false,
+                fullWidth: true
+              });
+              
+              chart.on('draw', function(data) {
+                if(data.type === 'line' || data.type === 'area') {
+                  data.element.animate({
+                    d: {
+                      begin: 2000 * data.index,
+                      dur: 2000,
+                      from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+                      to: data.path.clone().stringify(),
+                      easing: Chartist.Svg.Easing.easeOutQuint
+                    }
+                  });
+                }
+              });
+          });
+      });
+        document.addEventListener("DOMContentLoaded", function(event) { 
+
+        });
+      </script>
+    </div>
+   <div id="releaseplanning2" data-x='2884' data-y='1200' data-scale='0.5' class="step">
+        <p>Release burndown VS undone</p>
+      <div id="undonegraph" class="graph"></div>
+      <script>
+         $( document ).ready(function() {
+            $('#releaseplanning2').on('impress:stepenter', function(){
+                var chart = new Chartist.Line('#undonegraph', {
+                labels: ['Début','Sprint 1', 'Sprint 2', 'Sprint 3', 'Sprint 4', 'Sprint 5', 'Sprint refacto'],
+                series: [
+            [5, 4.5, 3, 2, 1,0],
+            [0, 0.1, 0.15, 0.30, 0.75, 1.25],
+            [null, null, null, null,null, 1.25,0]
+                ]
+              }, {
+                low: 0,
+                showArea: true,
+                showPoint: false,
+                fullWidth: true
+              });
+              
+              chart.on('draw', function(data) {
+                if(data.type === 'line' || data.type === 'area') {
+                  data.element.animate({
+                    d: {
+                      begin: 1000 * data.index,
+                      dur: 1000,
+                      from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+                      to: data.path.clone().stringify(),
+                      easing: Chartist.Svg.Easing.easeOutQuint
+                    }
+                  });
+                }
+              });
+          });
+      });
+        document.addEventListener("DOMContentLoaded", function(event) { 
+
+        });
+      </script>
+    </div>
+    <div id="end" data-x='750' data-y='1800' data-z='450' data-scale='0.2' data-rotate-x='-60' data-rotate-y='45' class="step">
+      <div class="credits">
+        <h2><a href="#title" class="title">Définissons le done</a><br />
+        Softeam Cadextan /
+<a href="https://github.com/scottcheng" target="_blank">Olivier Lafon</a></h2>
+        <p><a href="http://bartaz.github.com/impress.js/" target="_blank">impress.js</a> par 
+          <a href="http://bartaz.github.com/" target="_blank">Bartek Szopka</a></p>
+        <p><a href="http://www.google.com/webfonts/specimen/Telex" target="_blank">Telex font</a> par Andrés Torresi pour
+          <a href="http://www.huertatipografica.com.ar/" target="_blank">Huerta Tipográfica</a></p>
+
+        <p>Theme inspiré par <a href="https://github.com/scottcheng" target="_blank">The Revolutionary CSS 3</a> de Scott Cheng
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <div id="social">
+    <div class="social-button-wrapper">
+      Définissons le Done!
+    </div>
+  </div>
+  <script src="lib/impress.js"></script>
+  <script src="lib/snap.svg-min.js"></script>
+
+  <script>
+    impress().init();
+  </script>
+</body>
+
+</html>

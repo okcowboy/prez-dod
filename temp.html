@@ -1,0 +1,81 @@
+
+
+    <div id="impact" data-x='-600' data-y='0' data-rotate='90' data-scale='0.25' class="step" data-width="1800" data-height="1800" class="graph">
+      <p>Projet de 5 itérations - Release burndown</p>
+      <div id="donegraph" class="graph"></div>
+      <script>
+        $( document ).ready(function() {
+            $('#impact').on('impress:stepenter', function(){
+                var chart = new Chartist.Line('#donegraph', {
+                labels: ['Début','Sprint 1', 'Sprint 2', 'Sprint 3', 'Sprint 4', 'Sprint 5'],
+                series: [
+                  [5, 4.5, 3, 2, 1,0]
+                ]
+              }, {
+                low: 0,
+                showArea: true,
+                showPoint: false,
+                fullWidth: true
+              });
+              
+              chart.on('draw', function(data) {
+                if(data.type === 'line' || data.type === 'area') {
+                  data.element.animate({
+                    d: {
+                      begin: 2000 * data.index,
+                      dur: 2000,
+                      from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+                      to: data.path.clone().stringify(),
+                      easing: Chartist.Svg.Easing.easeOutQuint
+                    }
+                  });
+                }
+              });
+          });
+      });
+        document.addEventListener("DOMContentLoaded", function(event) { 
+
+        });
+      </script>
+    </div>
+
+    <div id="impact-old" data-x='-810' data-y='0' data-rotate='90' data-scale='0.25' class="step">
+      <p>Projet de 5 itérations - Release burndown VS undone</p>
+      <div id="undonegraph" class="graph"></div>
+      <script>
+         $( document ).ready(function() {
+            $('#impact-old').on('impress:stepenter', function(){
+                var chart = new Chartist.Line('#undonegraph', {
+                labels: ['Début','Sprint 1', 'Sprint 2', 'Sprint 3', 'Sprint 4', 'Sprint 5', 'Sprint refacto'],
+                series: [
+            [5, 4.5, 3, 2, 1,0],
+            [0, 0.1, 0.15, 0.30, 0.75, 1.25],
+            [null, null, null, null,null, 1.25,0]
+                ]
+              }, {
+                low: 0,
+                showArea: true,
+                showPoint: false,
+                fullWidth: true
+              });
+              
+              chart.on('draw', function(data) {
+                if(data.type === 'line' || data.type === 'area') {
+                  data.element.animate({
+                    d: {
+                      begin: 1000 * data.index,
+                      dur: 1000,
+                      from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+                      to: data.path.clone().stringify(),
+                      easing: Chartist.Svg.Easing.easeOutQuint
+                    }
+                  });
+                }
+              });
+          });
+      });
+        document.addEventListener("DOMContentLoaded", function(event) { 
+
+        });
+      </script>
+    </div>
